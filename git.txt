@@ -1,0 +1,40 @@
+git init – инициализация папки для git репозитория.
+
+git add . – добавляем все новые изменённые файлы в индекс репозитория.
+git commit -m “comment” – создаем коммит, где comment  это ваш комментарий.
+git push -u origin master – заливаем локальные изменения на ветку master.
+git pull – скачать последние изменения с репозитория.
+
+git reset --hard HEAD^ – удаляет последний локальный (не опубликованный) коммит.
+
+git status – просмотреть статус изменений, которые были сделаны.
+
+git branch – просмотр существующих веток.
+git branch -v – просмотр существующих веток с подробной информацией.
+git branch new_branch – создание ветки new_branch.
+git checkout new_branch – переход на ветку new_branch.
+git checkout -b new_branch  – создание ветки new_branch и моментальный переход на данную ветку. Это шоркат, который упрощает работу с git.
+git checkout master – переход на ветку master (основная ветка).
+
+git merge new_branch – сливает текущую ветку (например вы сейчас в master) с веткой new_branch. При этом ветка new_branch еще существует. Но master и new_branch теперь имеют одинаковую информацию.
+git branch --merged – ветки, которые были объеденные.
+git branch --merged dev – ветки, которые были объеденные с веткой dev.
+git branch --no-merged – ветки, которые не были объединены.
+git branch -d new_branch – удалить локальную ветку new_branch.
+git branch -D new_branch – форсированно удалить локальную ветку new_branch.
+git push origin --delete new_branch – удалить удаленную ветку new_branch  с github.com.
+
+git branch -m new_name_branch – переименовать ветку new_name_branch.
+
+gitk --all – просмотр полного дерева версий в git с графическим интерфейсом.
+git log --pretty=oneline --graph --decorate --all – просмотр полного дерева версий в git без графического интерфейса.
+
+mkdir new_folder – создать папку new_folder.
+rmdir new_folder – удалить папку new_folder, в которой нет файлов.
+rm –rf new_foldder – удалит папку new_folder даже если в этой папке будут файлы или вложенные папки.
+
+nano index.html – создает файл index.html и открывает его для редактирования. Также данная команда открывает для редактирования указанный файл. Ctrl+X закрывает окно редактирования.
+rm index.html – удалить index.html в текущем каталоге.
+git log – просмотр спика коммитов
+git show 096881b76c61b6d7479c2b803e0dcf6841e39bf9 – где 096881b76c61b6d7479c2b803e0dcf6841e39bf9 это id коммита, который можно посмотреть после команды git log. git show позволяет узнать, что было изменено в данном коммите
+git diff – просмотр изменений, до коммита
