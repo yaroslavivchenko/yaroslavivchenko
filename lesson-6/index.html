@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            font-style: italic;
+            color: rgb(124, 36, 206);
+        }
+        h1 span {
+            color: blue;
+            text-transform: uppercase;
+            font-style: normal;
+        }
+        .block1 {
+            border: 10px double blue;
+            padding: 20px;
+        } 
+        h2 {
+            color: chartreuse;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+        <div class="block1">
+            <h1>Main <span>Title</span></h1>
+            <p>Lorem ipsum <strong><br>dolor sit amet.</strong></p>
+        </div>
+        <p class="price">
+            Your price is $<span class="total">0</span>
+        </p>
+        <button type="button" class="btn-price">
+            Купить
+        </button>
+        <script>
+            document.getElementsByClassName('btn-price')[0]
+            .addEventListener('click', function() {
+                document.getElementsByClassName('total')[0]
+                .innerHTML = 100;
+            });
+        </script>
+    <hr>
+    <p><b>Blod Tekst</b></p>
+    <p><strong>Blod Tekst</strong></p>
+    <hr>
+    <p><em>italic tekst</em></p>
+    <p><i>Italic Tekst</i></p>
+    <hr>
+    <p><u>Underline Text</u></p>
+    <p><del>Underline Text</del></p>
+    <hr>
+    <p><small>My</small>Text<small>Line</small></p>
+    <hr>
+    <p>
+        Площадь зоны составляет 30км<sup>2</sup>
+    </p>
+    <hr>
+    <p>
+        log<sub>10</sub>
+    </p>
+    <hr>
+    <p>
+        <dt>Солнечная система</dt>
+        <dd>Юпитер</dd>
+        <dd>Сатурн</dd>
+        <dd>Уран</dd>
+        <hr>
+        <h2>
+            Ненумерованый список
+        </h2>
+    <ul>
+        <li>Молоко</li>
+        <li>Хлеб</li>
+        <li>Шоколад</li>
+        <li>Бананы</li>
+        <li>Лук</li>
+    </ul>
+    <hr>
+    <h2>
+        Нумерованый список
+    </h2>
+    <ol>
+        <li>Молоко</li>
+        <li>Хлеб</li>
+        <li>Шоколад</li>
+        <li>Бананы</li>
+        <li>Лук</li>
+    </ol>
+    <hr>
+    <h2>Список терминов</h2>
+    <img width="50%" src="img/Africa_and_Europe_from_a_Million_Miles_Away.png" alt="Planet">
+    <dl>
+        <dt>Планета</dt>
+        <dd>(др.-греч. πλανήτης, альтернати́вная фо́рма др.-греч. πλάνης — «странник») — небесное тело, вращающееся по орбите вокруг звезды или её остатков, достаточно массивное, чтобы стать округлым под действием собственной гравитации, но недостаточно массивное для начала термоядерной реакции, и сумевшее очистить окрестности своей орбиты от планетезималей</dd>
+    </dl>
+    </p>
+</body>
+</html>
